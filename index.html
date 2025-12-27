@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Musics</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<!-- Top Navbar -->
+<header class="navbar">
+  <div class="brand">🎧 Top Musics</div>
+  <nav>
+    <a>Home</a>
+    <a>Favorites</a>
+    <a>Albums</a>
+    <a>Top Charts</a>
+  </nav>
+</header>
+
+<!-- Layout -->
+<div class="layout">
+
+  <!-- Mini Sidebar -->
+  <aside class="mini">
+    <button>＋</button>
+    <button>♥</button>
+    <button>🎵</button>
+    <button>🔥</button>
+  </aside>
+
+  <!-- Main -->
+  <main class="content">
+
+    <section class="hero">
+      <h1>Your Music, Your Mood</h1>
+      <p>Stream your favorite tracks anytime</p>
+    </section>
+
+    <section class="section">
+      <h2>Favorite Songs</h2>
+      <div class="cards">
+        <div class="music-card" onclick="play('Believer')">
+          <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d">
+          <span>Believer</span>
+        </div>
+        <div class="music-card" onclick="play('Perfect')">
+          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4">
+          <span>Perfect</span>
+        </div>
+        <div class="music-card" onclick="play('Blinding Lights')">
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f">
+          <span>Blinding Lights</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Create Album</h2>
+      <div class="album-grid">
+        <div class="album add">＋</div>
+        <div class="album">Chill</div>
+        <div class="album">Workout</div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- Bottom Player -->
+<footer class="player">
+  <div id="now">No song playing</div>
+  <div class="bars">
+    <span></span><span></span><span></span><span></span>
+  </div>
+  <div>⏮ ⏯ ⏭</div>
+</footer>
+
+</body>
+</html>
